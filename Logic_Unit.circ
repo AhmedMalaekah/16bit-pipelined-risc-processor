@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="٣.٩.٠" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <main name="logic"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="logic">
+    <a name="circuit" val="logic"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(٣٣٠,٣٢٠)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="C"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(٣٨٠,٢٢٠)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OTP"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(٩٠,٣٦٠)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(٩٠,٥٠)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="1" loc="(١٨٠,١٣٠)" name="AND Gate">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="1" loc="(١٨٠,٢١٠)" name="OR Gate">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="1" loc="(١٨٠,٢٩٠)" name="XOR Gate">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="1" loc="(٢٦٠,٢٢٠)" name="NOT Gate">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="2" loc="(٣٥٠,٢٢٠)" name="Multiplexer">
+      <a name="enable" val="true"/>
+      <a name="select" val="2"/>
+      <a name="width" val="16"/>
+    </comp>
+    <wire from="(١٠٠,١٥٠)" to="(١٠٠,٢٣٠)"/>
+    <wire from="(١٠٠,١٥٠)" to="(١٣٠,١٥٠)"/>
+    <wire from="(١٠٠,٢٣٠)" to="(١٠٠,٣١٠)"/>
+    <wire from="(١٠٠,٢٣٠)" to="(١٣٠,٢٣٠)"/>
+    <wire from="(١٠٠,٣١٠)" to="(١٠٠,٣٦٠)"/>
+    <wire from="(١٠٠,٣١٠)" to="(١٢٠,٣١٠)"/>
+    <wire from="(١٠٠,٥٠)" to="(١٠٠,٨٠)"/>
+    <wire from="(١٨٠,١٣٠)" to="(٣٠٠,١٣٠)"/>
+    <wire from="(١٨٠,٢١٠)" to="(٢١٠,٢١٠)"/>
+    <wire from="(١٨٠,٢٩٠)" to="(٣٠٠,٢٩٠)"/>
+    <wire from="(٢١٠,٢١٠)" to="(٢١٠,٢٢٠)"/>
+    <wire from="(٢١٠,٢١٠)" to="(٣١٠,٢١٠)"/>
+    <wire from="(٢١٠,٢٢٠)" to="(٢٣٠,٢٢٠)"/>
+    <wire from="(٢٦٠,٢٢٠)" to="(٣١٠,٢٢٠)"/>
+    <wire from="(٣٠٠,١٣٠)" to="(٣٠٠,٢٠٠)"/>
+    <wire from="(٣٠٠,٢٠٠)" to="(٣١٠,٢٠٠)"/>
+    <wire from="(٣٠٠,٢٣٠)" to="(٣٠٠,٢٩٠)"/>
+    <wire from="(٣٠٠,٢٣٠)" to="(٣١٠,٢٣٠)"/>
+    <wire from="(٣٣٠,٢٤٠)" to="(٣٣٠,٣٢٠)"/>
+    <wire from="(٣٥٠,٢٢٠)" to="(٣٨٠,٢٢٠)"/>
+    <wire from="(٦٠,١١٠)" to="(١٣٠,١١٠)"/>
+    <wire from="(٦٠,١١٠)" to="(٦٠,١٩٠)"/>
+    <wire from="(٦٠,١٩٠)" to="(١٣٠,١٩٠)"/>
+    <wire from="(٦٠,١٩٠)" to="(٦٠,٢٧٠)"/>
+    <wire from="(٦٠,٢٧٠)" to="(١٢٠,٢٧٠)"/>
+    <wire from="(٦٠,٨٠)" to="(١٠٠,٨٠)"/>
+    <wire from="(٦٠,٨٠)" to="(٦٠,١١٠)"/>
+    <wire from="(٩٠,٣٦٠)" to="(١٠٠,٣٦٠)"/>
+    <wire from="(٩٠,٥٠)" to="(١٠٠,٥٠)"/>
+  </circuit>
+</project>

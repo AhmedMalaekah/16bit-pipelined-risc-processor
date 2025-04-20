@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="٣.٩.٠" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <lib desc="file#ALU.circ" name="12"/>
+  <main name="ALUplus"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="ALUplus">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="ALUplus"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(٢٨٠,٢٥٠)" name="Tunnel">
+      <a name="label" val="lmmOut"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(٢٨٠,٣٠٠)" name="Constant">
+      <a name="value" val="0x5"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(٣٠٠,٣٤٠)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PC_PLUS1"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(٣٨٠,٢٦٠)" name="Tunnel">
+      <a name="label" val="BusB"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(٥١٠,٢٩٠)" name="Tunnel">
+      <a name="label" val="BusA"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="12" loc="(٧٢٠,٣٢٠)" name="ALU"/>
+    <comp lib="2" loc="(٤٣٠,٣٤٠)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="3" loc="(٣٦٠,٢٩٠)" name="Shifter">
+      <a name="width" val="16"/>
+    </comp>
+    <wire from="(٢٧٠,٢٥٠)" to="(٢٧٠,٢٨٠)"/>
+    <wire from="(٢٧٠,٢٥٠)" to="(٢٨٠,٢٥٠)"/>
+    <wire from="(٢٧٠,٢٨٠)" to="(٣٢٠,٢٨٠)"/>
+    <wire from="(٢٨٠,٣٠٠)" to="(٣٢٠,٣٠٠)"/>
+    <wire from="(٣٠٠,٣٤٠)" to="(٣٩٠,٣٤٠)"/>
+    <wire from="(٣٦٠,٢٩٠)" to="(٣٧٠,٢٩٠)"/>
+    <wire from="(٣٧٠,٢٩٠)" to="(٣٧٠,٣٣٠)"/>
+    <wire from="(٣٧٠,٣٣٠)" to="(٣٩٠,٣٣٠)"/>
+    <wire from="(٣٨٠,٢٦٠)" to="(٣٨٠,٣٢٠)"/>
+    <wire from="(٣٨٠,٣٢٠)" to="(٣٩٠,٣٢٠)"/>
+    <wire from="(٤٣٠,٣٤٠)" to="(٥٠٠,٣٤٠)"/>
+    <wire from="(٥٠٠,٢٩٠)" to="(٥٠٠,٣٢٠)"/>
+    <wire from="(٥٠٠,٢٩٠)" to="(٥١٠,٢٩٠)"/>
+  </circuit>
+</project>
